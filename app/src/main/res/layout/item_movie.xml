@@ -6,16 +6,11 @@
     android:id="@+id/movie_card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
+    android:layout_margin="@dimen/movie_card_margin"
     android:clipChildren="false"
     android:clipToPadding="false"
-    android:divider="@android:color/transparent"
-    android:dividerHeight="0.0px"
-    android:elevation="10dp"
-    android:innerRadius="0dp"
     android:shape="ring"
-    android:thicknessRatio="2"
-    app:cardCornerRadius="5dp"
+    app:cardCornerRadius="@dimen/movie_corner_dimen"
     card_view:cardElevation="10dp"
     card_view:cardPreventCornerOverlap="false">
 
@@ -27,7 +22,7 @@
         <ImageView
             android:id="@+id/movie_image"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="@dimen/movie_image_height"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/king_ragnar"/>
@@ -37,29 +32,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/movie_image"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"
+            android:layout_marginTop="@dimen/movie_text_margin"
+            android:layout_marginEnd="@dimen/movie_corner_dimen"
+            android:layout_marginStart="@dimen/movie_text_margin"
             android:textSize="22sp"
             android:textColor="@android:color/black"
-            android:text="hello"/>
+            android:text="title"/>
 
         <TextView
             android:id="@+id/movie_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/movie_title"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"
-            android:text="hello"
+            android:layout_marginTop="@dimen/movie_text_margin"
+            android:layout_marginEnd="@dimen/movie_corner_dimen"
+            android:layout_marginStart="@dimen/movie_text_margin"
+            android:text="description"
             android:textColor="@android:color/darker_gray"
             android:textSize="15sp"/>
         <View
             android:id="@+id/separator"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/movie_text_margin"
             android:alpha="0.5"
             android:layout_below="@id/movie_description"
             android:background="@android:color/darker_gray"/>

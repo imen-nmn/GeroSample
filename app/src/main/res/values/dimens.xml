@@ -1,5 +1,6 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
-    <dimen name="round_corner_dimen">20dp</dimen>
-
+    <dimen name="movie_card_margin">10dp</dimen>
+    <dimen name="movie_image_height">150dp</dimen>
+    <dimen name="movie_corner_dimen">5dp</dimen>
+    <dimen name="movie_text_margin">5dp</dimen>
 </resources>
